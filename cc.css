@@ -1,0 +1,46 @@
+/* تنسيق الصفحة الخلفية */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* الرمادي الغامق جدًا */
+    color: #fff;
+    text-align: center;
+}
+
+/* تنسيق الحاوية العامة */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* تنسيق رأس الصفحة */
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* تنسيق الصور في صفحة القراءة */
+.reading-images {
+    display: flex;
+    flex-direction: column; /* ترتيب الصور بشكل عمودي */
+    align-items: center;
+    gap: 20px; /* المسافة بين الصور */
+}
+
+/* تنسيق الصور */
+.reading-images img {
+    width: 80%; /* عرض الصورة سيكون 80% من العرض الكامل للصفحة */
+    max-width: 600px; /* الحد الأقصى لعرض الصورة 600px */
+    border-radius: 10px; /* جعل حواف الصور دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* تأثير الظل حول الصورة */
+    transition: transform 0.3s ease; /* تأثير عند تمرير الفأرة فوق الصورة */
+}
+
+/* تغيير حجم الصورة عند التمرير */
+.reading-images img:hover {
+    transform: scale(1.05); /* تكبير الصورة بشكل طفيف عند التمرير */
+}
